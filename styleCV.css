@@ -1,0 +1,135 @@
+body {
+  background-color: #303236;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+.cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #393e46;
+  box-shadow: none;
+  border-radius: 10px;
+  width: 25%;
+  box-shadow: 5px 5px 5px black;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 2em;
+}
+#face-pic {
+  border-radius: 40px;
+  height: 10em;
+  margin: 1em;
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px black;
+}
+#face-pic:hover {
+  box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+}
+ul {
+  display: flex;
+  flex-direction: rows;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style: none;
+  padding: 1em;
+  text-align: justify;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+.redirect {
+  height: 3em;
+}
+.links::before {
+  content: "";
+  position: absolute;
+  background: #b6b4b4;
+  height: 0%;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+  border-radius: 0px;
+}
+.links:hover::before {
+  height: 100%;
+  border-radius: 5px;
+}
+.links:hover {
+  box-shadow: 5px 5px 10px black;
+}
+.schools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  font-style: italic;
+}
+.headings {
+  text-shadow: 2px 2px 5px white;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+.cvbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 20%;
+  margin: 34px auto;
+  text-shadow: 1px 1px 6px white, -1px -1px 6px white;
+  box-shadow: 3px 3px 10px white, -3px -3px 10px white;
+  transition: all 0.3s ease;
+}
+.cvbtn:hover {
+  text-shadow: 2px 2px 6px white, -2px -2px 6px white;
+  box-shadow: 5px 5px 20px white, -5px -5px 20px white;
+}
