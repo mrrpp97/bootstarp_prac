@@ -1,0 +1,23 @@
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.feature-heading {
+  text-align: center;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.8);
+  margin: 0px;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  color: whitesmoke;
+}
